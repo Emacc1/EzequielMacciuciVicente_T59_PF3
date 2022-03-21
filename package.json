@@ -1,0 +1,11 @@
+{
+  "name": "t59",
+  "version": "1.0.0",
+  "description": "Desafio 5 repositorio de animaciones y transiciones",
+  "main": "index.js",
+  "scripts": {
+    "dev":"sass style.scss style.css -w --no-source-map -s compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}
