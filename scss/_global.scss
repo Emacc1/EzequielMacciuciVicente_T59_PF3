@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+        
 }
 
 html {
@@ -13,18 +14,18 @@ html {
     height: $height;
 }
 
-.textbox{
+// .textbox{
 
-    font-size:$textBase;
-    color: $colorSecundary;
-    margin: 0 auto;
-}
+//     font-size:$textBase;
+//     color: $colorSecundary;
+//     margin: 0 auto;
+// }
 
 
-@each $heading, $size in (h2: 12px, strong: 18px){
+// @each $heading, $size in (h2: 12px, strong: 18px){
 
-    #{$heading}{
-        font-size: $size;
-    }
-}
+//     #{$heading}{
+//         font-size: $size;
+//     }
+// }
     
