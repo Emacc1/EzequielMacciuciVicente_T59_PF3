@@ -1,16 +1,14 @@
 header{
 
-    @include sizes(98vw, 80px);
+    @include sizes(100vw, 80px);
     margin: auto;
-    margin-top: 5px;
-    // background-color: $colorPrimary;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: 80px;
     gap: 5px;
     background-color: $colorPrimary;
-    border-radius: $boxradius;
+    
 
     .logoH{
 
@@ -38,6 +36,9 @@ header{
         margin: auto;        ;
 
         ul{
+
+            margin: 0%;
+            padding: 0%;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
         }
@@ -67,6 +68,7 @@ header{
         grid-area:1/11/2/13;
         width: 100%;
         text-align: center;
+        
 
         ul{
             
@@ -74,7 +76,8 @@ header{
             margin: 0%;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly
+            justify-content: space-evenly;
+            margin-right: 10px;
             
             
             
@@ -87,6 +90,7 @@ header{
 
             @include sizes(50px,50px);
             font-size:$textMedium;
+            gap: 5px;
             
             
 
