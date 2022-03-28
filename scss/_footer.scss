@@ -3,7 +3,6 @@ footer{
     margin: 0;
     
     @include sizes(100%, 80px);
-    margin: auto;
     margin-top: 15px;
     overflow: hidden;
     display: grid;
@@ -42,7 +41,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        padding-right: 15px;
+        padding-right: 30px;
 
         ul
         li{
