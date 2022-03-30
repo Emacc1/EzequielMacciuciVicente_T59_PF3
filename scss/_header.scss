@@ -8,6 +8,7 @@ header{
     grid-auto-rows: 80px;
     gap: 5px;
     background-color: $colorPrimary;
+    box-sizing: border-box;
     
 
     .logoH{
