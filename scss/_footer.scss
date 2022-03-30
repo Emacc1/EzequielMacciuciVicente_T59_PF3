@@ -1,7 +1,7 @@
 footer{
 
-    margin: 0;
-    
+      
+    box-sizing: border-box;
     @include sizes(100%, 80px);
     margin-top: 15px;
     overflow: hidden;
@@ -10,13 +10,12 @@ footer{
     grid-auto-rows: 80px;
     gap: 5px;
     background-color: $colorPrimary;
-    box-sizing: border-box;
 
 
 
     .sign{
 
-        
+        box-sizing: border-box;
         grid-area: 1/1/2/2;
         width: 100%;
         height: 100%;
@@ -26,6 +25,7 @@ footer{
         
         
         p{
+            box-sizing: border-box;
             color: #ffffff;
             padding-left: 15px;
             
@@ -34,7 +34,7 @@ footer{
 
     .rrssF{
 
-        
+        box-sizing: border-box;        
         grid-area: 1/3/2/4;
         width: 100%;
         height: 100%;

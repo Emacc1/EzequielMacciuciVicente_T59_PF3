@@ -1,5 +1,6 @@
 header{
 
+    box-sizing: border-box;
     @include sizes(100vw, 80px);
     margin: 0, auto;
     overflow: hidden;
@@ -8,15 +9,15 @@ header{
     grid-auto-rows: 80px;
     gap: 5px;
     background-color: $colorPrimary;
-    box-sizing: border-box;
     
 
     .logoH{
-
+        
+        box-sizing: border-box;
         grid-area:1/1/2/3;
         height: 65px;
         width: 65px;
-        margin: auto;
+        margin: auto auto;
 
         a
         img{
@@ -31,10 +32,11 @@ header{
 
     nav{
 
+        box-sizing: border-box;
         width: 100%;
         grid-area:1/3/2/11;
         text-align: center;
-        margin: auto;        ;
+        margin: auto auto;        ;
 
         ul{
 
@@ -62,7 +64,7 @@ header{
     }
 
     .rrssH{
-
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -72,7 +74,7 @@ header{
         
 
         ul{
-            
+            box-sizing: border-box;
             padding: 0%;
             margin: 0;
             display: flex;
