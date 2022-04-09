@@ -45,22 +45,46 @@ html {
 //         font-size: $size;
 //     }
 // }
-    .rsIcon{
+.rsIcon{
 
+    
+    @include sizes(50px,50px);
+    background-color: white;
+    border-radius: $boxradius;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.gradiantPrimary__Radial{
         
-        @include sizes(50px,50px);
-        background-color: white;
-        border-radius: $boxradius;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        
+    background: rgb(43,42,42);
+    background: radial-gradient(circle, rgba(43,42,42,1) 17%, rgba(98,98,209,1) 100%);
+}
+
+.rounded_10{
+
+    border-radius:10px;
+}
+
+.backgroundImg{
+
+    &_Services{
+
+        background-image: url(../multimedia/frontend_webdeveloper.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 20rem;
+        width: auto;
+
     }
+}
 
-    .gradiantPrimary__Radial{
-            
-        background: rgb(43,42,42);
-        background: radial-gradient(circle, rgba(43,42,42,1) 17%, rgba(98,98,209,1) 100%);
-    }
-
+.mainShort{
+    
+    height: calc(100vh - 160px);
+}

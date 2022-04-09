@@ -1,9 +1,31 @@
 main{
     width: 100%;
     box-sizing: border-box;
-    // height: calc(100vh - 160px);
+
+    
+    
 
     // index
+
+    .titles{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        height: 100px;
+        
+        
+
+        h1{
+            font-size: $textLarge;
+            color: $colorComplementary;
+        }
+
+        p{
+            font-size: $textMedium;
+        }
+    }
     
     .carrusel{
 
@@ -37,7 +59,7 @@ main{
                 height: 400px;
                 border-radius: 20px;
                 overflow:hidden;
-                border-radius: 10px;
+                border: 1px solid $colorComplementary;
                 
 
                 
@@ -307,7 +329,6 @@ main{
                 justify-content: space-evenly;
                 position: relative;
                 width: 1fr;
-                height: calc(100vw - 160px);
                 border-radius: 10px;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
                 transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -381,5 +402,14 @@ main{
 
     
 
+}
+
+// about us
+
+.cards_AbautUs{
+    div
+    h2{
+        color: $colorComplementary;
+    }
 }
 
