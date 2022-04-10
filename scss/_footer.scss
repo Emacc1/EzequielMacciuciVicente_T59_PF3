@@ -3,7 +3,6 @@ footer{
       
     box-sizing: border-box;
     @include sizes(100%, 80px);
-    margin-top: 15px;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

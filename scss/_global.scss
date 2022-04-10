@@ -71,20 +71,16 @@ html {
 
 .backgroundImg{
 
-    &_Services{
-
-        background-image: url(../multimedia/frontend_webdeveloper.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 20rem;
-        width: auto;
-
-    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 20rem;
+    width: 100%;
 }
 
-.mainShort{
+.backgroundCards{
     
-    height: calc(100vh - 160px);
+    background-color: $colorSecundaryTransp;
+
 }
