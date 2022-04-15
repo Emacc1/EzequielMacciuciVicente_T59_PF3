@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
     
 
 }
@@ -14,7 +16,7 @@ body{
 
 ul{
     margin: 0;
-    list-style: none;
+    
 }
 
 a{
@@ -48,15 +50,28 @@ html {
 .rsIcon{
 
     
-    @include sizes(50px,50px);
+    @include sizes(45px,45px);
     background-color: white;
     border-radius: $boxradius;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
+}
+
+.rsIcon_768{
+
+    
+    @include sizes(35px,35px);
+    background-color: white;
+    border-radius: $boxradius;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
+
+
 
 .gradiantPrimary__Radial{
         
