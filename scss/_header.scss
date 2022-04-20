@@ -1,5 +1,4 @@
 header{
-
     width: 100%;
     height: 100vh;
     background-color: $colorPrimary;
@@ -10,22 +9,23 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
 
         .logo{
             width: 80px;
             margin-left: 20px;
-
         }
 
         .bar-btn{
             font-size: $textMedium;
             color: $colorSecundary;
-            margin-right: 20px;
+            margin-right:20px;
             cursor: pointer;
         }
         
         .nav-menu {
 
+           
             position: fixed;
             width: 100%;
             height: 0vh;
@@ -34,13 +34,11 @@ header{
             transition: all .5s;
             background:rgba(97, 97, 209, 0.815);
             
-
             li{
                 display: none;
                 line-height: 30px;
                 margin: 50px 0;
                 transition: all .5s;
-                
 
                 a{
                     color: $colorSecundary;
@@ -99,61 +97,63 @@ header{
     }
 }
 
-@media screen and (min-width:768px){
+@media only screen and (min-width:768px){
 
+    header{
 
-    .logo {
-        margin-left: 50px;
-    }
-    
-    nav {
-        height:100px;
-        // border: 1px solid red;
-
-        .nav-menu {
-            height: 100px;
-            position: relative;
-            top: 0;
-            background: none;
-            transition: none;
-            text-align: right;
-            margin-right: 50px;
-            border: 1px solid red;
-            li {
-                
-                display: inline-block;
-                line-height: 100px;
-                margin: 0 20px;
-                transition: none;
-
-                a {
-                    font-size: 12px;
-                    
-                    
         
-                }
-
+        nav {
+            height:100px;
+            // border: 1px solid red;
+            
+            .logo {
+                margin-left: 50px;
             }
 
-            .banner-text{
-    
-                h1{
-                    font-size: 70px;
-                    margin-bottom: 30px;
-                }
+            .bar-btn{
+                display: none;
+            }
+
+            .nav-menu {
+                position: absolute;
+                height: 100px;
+                top: 0;
+                background: none;
+                transition: none;
+                text-align: right;
+                margin-right: 50px;
                 
-                h2{
-                    font-size: 20px;
+                
+                li {
+                    
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    gap: 7px;                
+                    line-height: 100px;
+                    margin: 0 20px;
+                    transition: none;
+                    
+                    a {
+                        font-size: 12px;
+                        color: $colorSecundary;
+                    }
                 }
             }
+
+        }
+        
+        .banner-text{
+        
+            h1{
+                font-size: 70px;
+                margin-bottom: 30px;
+            }
+            
+            h2{
+                font-size: 20px;
+            }
+
         }
     }
 
-    .bar-btn {
-        display:none;
-    }
-
-
-
 }
-
